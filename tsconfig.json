@@ -11,12 +11,7 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true,
-        "paths": {
-            "@hooks/*": [
-                "./src/hooks/*"
-            ]
-        }
+        "resolveJsonModule": true
     },
     "include": [
         "src"

@@ -1,12 +1,10 @@
 import { status } from "../../types";
 import { rings } from "../../constants";
-import useViewport from '@hooks/useViewport';
 
 const height = 810;
 
 export function SVGGrid() {
-  const windowWidth = useViewport();
-  const width = Math.max(windowWidth, 1400);
+  const width = (1400);
 
   return (
     <svg width={width} height={height} style={{ backgroundColor: "white" }}>
