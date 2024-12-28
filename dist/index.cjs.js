@@ -1930,9 +1930,20 @@ function getStatusId(status) {
     return statusMap[status];
 }
 
+var useViewport = function () {
+    var _a = react.useState(window.innerWidth), width = _a[0], setWidth = _a[1];
+    react.useEffect(function () {
+        var handleResize = function () { return setWidth(window.innerWidth); };
+        window.addEventListener('resize', handleResize);
+        return function () { return window.removeEventListener('resize', handleResize); };
+    }, []);
+    return width;
+};
+
 var height = 810;
 function SVGGrid() {
-    var width = Math.max(window.innerWidth, 1400);
+    var windowWidth = useViewport();
+    var width = Math.max(windowWidth, 1400);
     return (jsxRuntime.jsx("svg", { width: width, height: height, style: { backgroundColor: "white" }, children: jsxRuntime.jsxs("g", { style: { backgroundColor: "green" }, transform: "translate(".concat(width / 2, ", ").concat(height / 2, ")"), children: [jsxRuntime.jsx("line", { x1: 0, y1: -380, x2: 0, y2: 380, stroke: "#f2f2ff", strokeWidth: 2 }), jsxRuntime.jsx("line", { x1: -width / 2, y1: 0, x2: width / 2, y2: 0, stroke: "#f2f2ff", strokeWidth: 2 }), status.map(function (status, i) {
                     return (jsxRuntime.jsx("g", { children: jsxRuntime.jsx("circle", { cx: 0, cy: 0, r: rings[i].radius, fill: "none", stroke: "#dde", strokeWidth: 4 }) }, status));
                 })] }) }));

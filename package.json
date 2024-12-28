@@ -24,9 +24,11 @@
     "@types/d3": "^7.4.3",
     "@types/node": "^22.10.2",
     "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "rollup": "^3.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   },
   "dependencies": {
