@@ -8,6 +8,7 @@ module.exports = {
         filename: 'SkillsRadarComponent.js',
         library: 'SkillsRadarComponent',
         libraryTarget: 'umd',
+        globalObject: 'this',
     },
     module: {
         rules: [
