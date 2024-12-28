@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/SkillsRadarComponent.js',
+    entry: './src/SkillsRadarComponent.tsx',
     mode: 'production',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.tsx?$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -29,6 +29,6 @@ module.exports = {
         'react-dom': 'react-dom',
     },
     resolve: {
-        extensions: ['.js'],
+        extensions: ['.tsx', '.ts', '.js'],
     },
 };
