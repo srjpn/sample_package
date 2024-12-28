@@ -9,13 +9,13 @@ export default {
     input: 'src/index.tsx',
     output: [
         {
-            file: 'dist/index.js',
-            format: 'cjs',
+            file: 'dist/index.cjs.js',
+            format: 'cjs', // CommonJS
             sourcemap: true,
         },
         {
             file: 'dist/index.esm.js',
-            format: 'esm',
+            format: 'esm', // ES Modules
             sourcemap: true,
         },
     ],
@@ -25,9 +25,9 @@ export default {
         commonjs(),
         typescript({ tsconfig: './tsconfig.json' }),
         json(),
-        postcss({ // Add this plugin
-            extract: true, // Extract CSS into a separate file
-            minimize: true, // Minify the CSS
+        postcss({
+            extract: true,
+            minimize: true,
         }),
     ],
     external: ['react', 'react-dom'],

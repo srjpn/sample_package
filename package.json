@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
+  "exports": {
+    "import": "./dist/index.esm.js",
+    "require": "./dist/index.cjs.js"
+  },
   "scripts": {
     "build": "rollup -c"
   },
