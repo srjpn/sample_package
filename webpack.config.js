@@ -7,7 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'SkillsRadarComponent.js',
         library: 'SkillsRadarComponent',
-        libraryTarget: 'umd',
+        libraryTarget: 'commonjs2',
     },
     module: {
         rules: [
