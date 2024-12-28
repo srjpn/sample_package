@@ -1,7 +1,7 @@
 {
   "name": "skills-radar",
   "version": "1.0.0",
-  "main": "dist/SkillsRadarComponent.js",
+  "main": "src/SkillsRadarComponent.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
