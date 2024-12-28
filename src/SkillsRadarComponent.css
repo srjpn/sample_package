@@ -1,0 +1,16 @@
+.skills-radar {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.skills-radar h1 {
+    color: #333;
+}
+
+.skills-radar p {
+    color: #666;
+}
