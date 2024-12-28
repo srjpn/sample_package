@@ -11,4 +11,5 @@ const SkillsRadarComponent = () => {
     );
 };
 
-export { SkillsRadarComponent, NewComponent };
+export default SkillsRadarComponent;
+export { NewComponent };
