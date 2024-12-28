@@ -1,5 +1,6 @@
 import React from 'react';
 import './SkillsRadarComponent.css';
+import NewComponent from './NewComponent';
 
 const SkillsRadarComponent = () => {
     return (
@@ -10,4 +11,4 @@ const SkillsRadarComponent = () => {
     );
 };
 
-export default SkillsRadarComponent;
+export { SkillsRadarComponent, NewComponent };
