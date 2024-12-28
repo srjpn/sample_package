@@ -1,1 +1,1 @@
-export { default as MyComponent } from './SkillsRadarComponent';
+export { Radar } from './components/Radar/index';

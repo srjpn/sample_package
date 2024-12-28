@@ -5,11 +5,13 @@
         "declaration": true,
         "declarationDir": "./dist/types",
         "outDir": "./dist",
-        "jsx": "react",
+        "jsx": "react-jsx",
+        "jsxImportSource": "react",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
     },
     "include": [
         "src"

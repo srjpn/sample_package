@@ -1,3 +1,2 @@
-import React from 'react';
-declare const NewComponent: () => React.JSX.Element;
+declare const NewComponent: () => import("react/jsx-runtime").JSX.Element;
 export default NewComponent;
