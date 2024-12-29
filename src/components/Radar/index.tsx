@@ -12,15 +12,17 @@ interface RadarProps {
   entries: Entry[];
 }
 
-export function Radar({ entries }: RadarProps) {
+function Radar({ entries }: RadarProps) {
   const [selected, setSelected] = useState<string>();  
   const blips = entries.map((entry) => new Blip(entry));
 
   return (
     <div className="radar">
-      <Categories selected={selected} setSelected={setSelected} />
+      {/* <Categories selected={selected} setSelected={setSelected} /> */}
       <Blips selected={selected} setSelected={setSelected} entries={blips} />
       <SVGGrid />
     </div>
   );
 }
+
+export default Radar;
